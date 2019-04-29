@@ -1,13 +1,23 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
         "module": "commonjs",
+        "moduleResolution": "node",
         "target": "es5",
         "removeComments": true,
         "sourceMap": true,
         "outDir": "./build",
-        "listFiles": true
+        "listFiles": true,
+        "lib": [
+        "es2015",
+        "dom"
+    ]
     },
     "exclude": [
         "./node_modules"
     ]
+
 }
